@@ -413,10 +413,6 @@ def plot_evolve(evolve_csv='path/to/evolve.csv'):  # from utils.plots import *; 
     plt.close()
     print(f'Saved {f}')
 
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master
 def plot_results(file='path/to/results.csv', dir=''):
     # Plot training results.csv. Usage: from utils.plots import *; plot_results('path/to/results.csv')
     save_dir = Path(file).parent if file else Path(dir)
@@ -440,14 +436,10 @@ def plot_results(file='path/to/results.csv', dir=''):
             LOGGER.info(f'Warning: Plotting error for {f}: {e}')
     ax[1].legend()
     fig.savefig(save_dir / 'results.png', dpi=200)
-<<<<<<< HEAD
     path_results = os.path.join(save_dir,'results.png')
     image = plt.imread(path_results)
     plt.close()
     return image
-=======
-    plt.close()
->>>>>>> upstream/master
 
 
 def profile_idetection(start=0, stop=0, labels=(), save_dir=''):
